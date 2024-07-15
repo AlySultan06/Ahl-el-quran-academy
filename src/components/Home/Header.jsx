@@ -68,7 +68,7 @@ export default function Header() {
               width: { xs: "80px", sm: "85px", md: "95px" },
             }}
           >
-            <img src="../public/imgs/logo.png" />
+            <img src="../imgs/logo.png" />
           </Link>
 
           {/* mobile */}

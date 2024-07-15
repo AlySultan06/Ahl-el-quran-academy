@@ -34,7 +34,7 @@ export default function LearnSystem() {
       sx={{
        
         backgroundColor: "background.secondary",
-        backgroundImage: "url(../public/imgs/decor.png)",
+        backgroundImage: "url(../imgs/decor.png)",
         backgroundRepeat: "no-repeat",
         backgroundPositionX: "center",
         backgroundPositionY: "center",

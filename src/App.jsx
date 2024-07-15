@@ -48,7 +48,7 @@ function App() {
       backgroundPositionX: "center",
       backgroundPositionY: "center",
       backgroundImage:
-      "linear-gradient(90deg, rgb(219 193 100 / 46%) 57%, rgb(255 228 82 / 28%) 100%), url(../public/imgs/landing.jpeg)"
+      "linear-gradient(90deg, rgb(219 193 100 / 46%) 57%, rgb(255 228 82 / 28%) 100%), url(../imgs/landing.jpeg)"
       ,
       backgroundSize:"cover",
       height: "100vh",
