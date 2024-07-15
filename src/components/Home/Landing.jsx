@@ -25,7 +25,7 @@ export default function Landing() {
           </Box>
 
           <Box sx={{width:"400px",animation:"landing infinite",display:{xs:"none",md:"block"}}}>
-            <img src="../../..imgs/landing-logo.png" style={{animation:"landing infinite forwards 4s"}}/>
+            <img src="../../imgs/landing-logo.png" style={{animation:"landing infinite forwards 4s"}}/>
           </Box>
         </Stack>
       </Container>

@@ -35,7 +35,7 @@ function About() {
           </Box>
 
           <Box sx={{width:{md:"500px"}}}  className="aboutphoto" data-aos="fade-right">
-            <img src="../../../public/imgs/about.jpg"/>
+            <img src="../../../imgs/about.jpg"/>
           </Box>
         </Stack>
       </Container>
