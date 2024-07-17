@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <Box sx={{bg:"white",py:"20px"}}>
 <Stack direction="column" alignItems="center">
-<Typography variant="body1" color="text.primary">جميع الحقوق محفوظة لأكادمية أهل القرأن&copy;2024 </Typography>
+<Typography variant="body1" color="text.primary" sx={{textAlign:"center"}}>جميع الحقوق محفوظة لأكادمية أهل القرأن&copy;2024 </Typography>
 </Stack>
     </Box>
   )

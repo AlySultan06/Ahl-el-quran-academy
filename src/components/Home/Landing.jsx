@@ -17,10 +17,10 @@ export default function Landing() {
             أهلا بكم في أكادمية <span style={{color:"#cba557"}}>أهل القرأن</span>
           </Typography>
           <List sx={{ listStyle: "disc", color: "white",display:"flex",flexDirection:"column",alignItems:"center" }}>
-          <ListItem className="li" sx={{fontSize:"20px",textAlign:"right"}}>تحفيظ و تفسير شامل للأيات</ListItem>
-          <ListItem className="li"  sx={{fontSize:"20px",textAlign:"right"}} >تعليم جميع أحكام التجويد و النورانية</ListItem>
-            <ListItem  className="li" sx={{fontSize:"20px",textAlign:"right"}}>إختبارات شهرية تقيس مستوي الطالب</ListItem>
-            <ListItem className="li" sx={{fontSize:"20px",textAlign:"right"}}>دورات مصممة لجميع المستويات</ListItem>
+          <ListItem className="li" sx={{fontSize:"20px",textAlign:"left"}}>تحفيظ و تفسير شامل للأيات</ListItem>
+          <ListItem className="li"  sx={{fontSize:"20px",textAlign:"left"}} >تعليم جميع أحكام التجويد و النورانية</ListItem>
+            <ListItem  className="li" sx={{fontSize:"20px",textAlign:"left"}}>إختبارات شهرية تقيس مستوي الطالب</ListItem>
+            <ListItem className="li" sx={{fontSize:"20px",textAlign:"left"}}>دورات مصممة لجميع المستويات</ListItem>
           </List>
           </Box>
 
