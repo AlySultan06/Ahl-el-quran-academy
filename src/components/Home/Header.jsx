@@ -19,6 +19,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import CloseIcon from "@mui/icons-material/Close";
 
+
 const pages = ["التواصل", "الدورات", "المزايا", "نظام التعليم", "من نحن"];
 pages.reverse();
 
@@ -26,6 +27,19 @@ export default function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(false);
   const [navBg, setNavBg] = React.useState("transparent !important");
   const [scrollY, setScrollY] = React.useState(window.scrollY);
+
+
+
+
+
+const hrefs= ["/#about","/#learnsystem","/#advantages","/#courses","/#contact"]
+
+
+
+
+
+
+
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 0) {
@@ -93,7 +107,7 @@ export default function Header() {
               onClose={handleCloseNavMenu}
               sx={{
                 "& .MuiDrawer-paper": {
-                  width: "50vw",
+                  width: "70vw",
                 },
                 textAlign: "right",
               }}
@@ -106,7 +120,7 @@ export default function Header() {
                 sx={{
                   marginRight: "10px",
 
-                  justifyContent: "flex-start",
+                  justifyContent: "flex-end",
                   px: 0,
                 }}
               >
@@ -117,12 +131,14 @@ export default function Header() {
                 />
               </IconButton>
 
-              <List>
-                {pages.map((page) => {
+              <List sx={{mr:"20px"}}>
+                {pages.map((page,index) => {
                   return (
                     <ListItem
                       key={page}
                       className="hover"
+                      component={Link}
+                      href={hrefs[index]}
                       sx={{
                         my: 1.5,
                         paddingRight: "40px",
@@ -150,15 +166,17 @@ export default function Header() {
           <Box
             sx={{
               flexGrow: 1,
-              marginRight: "50px",
+              mx: "50px",
               gap: "30px",
               display: { xs: "none", md: "flex" },
             }}
           >
-            {pages.map((page) => (
+            {pages.map((page,index) => (
               <ListItem
                 key={page}
                 className="hover"
+                component={Link}
+                href= {hrefs[index]}
                 onClick={handleCloseNavMenu}
                 disableRipple
                 disableTouchRipple
@@ -167,7 +185,7 @@ export default function Header() {
                   my: 2,
                   fontSize: "16px",
                   p: 0,
-                  textAlign: "right",
+                  textAlign:"right",
                   width: "auto",
                   cursor: "pointer",
                   color: navBg == "white" ? "text.secondary.blue" : "white",
@@ -185,6 +203,9 @@ export default function Header() {
 
           <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
             <Button
+              componet={Link}
+              href="https://wa.me/+201125362605"
+              target="_blank"
               sx={{
                 bgcolor: navBg == "white" ? "text.primary" : "white",
                 border: "1px solid",
@@ -200,7 +221,7 @@ export default function Header() {
                 },
               }}
             >
-              تواصل: +2010926540323
+تواصل معنا
             </Button>
           </Box>
         </Toolbar>

@@ -7,22 +7,24 @@ import Stack from "@mui/material/Stack";
 
 export default function LearnSystem() {
   const learnSystem = [
+
     {
       title: "التسميع",
-      aos:"fade-left",
+      aos:"fade-down",
       description:
         "تبدأ الحلقة بتسميع واجب الحلقة السابقة الذي يتكون من القراءة والتلاوة من الذكر الشريف، بما فيه من الماضي البعيد والقريب. يتم أيضًا تسميع السور التي تم حفظها، وتسميع الآيات الجديدة. بعد ذلك، يتم إرسال تقرير لولي الأمر بمدى جودة تسميع الطالب وتقدمه في تلاوة القرآن.",
     },
+
   
     {
       title: "التحفيظ",
-      aos:"fade-right",
+      aos:"fade-down",
       description:
         "يقوم المعلم بعد ذلك بتحفيظ الأيات الجديدة للطلاب بأحكام التجويد و التأكد من إتقان الطالب للأيات من حيث التلاوة و التجويد عن طريق الترديد وراء المعلم ثم تلاوتها لوحده",
     },
     {
       title: "تفسير الأيات",
-      aos:"fade-left",
+      aos:"fade-down",
       description:
         "و تكون أخر ربع ساعة من الحلقة عبارة عن تفسير مفصل للأيات و معنيها مع استنتاج الدروس المستفادة و القيم التربوية من الأيات و عمل إختبار بسيط للطالب لقياس مدي تركيزه في اللقة",
     },
@@ -31,6 +33,7 @@ export default function LearnSystem() {
 
   return (
     <Box
+    id="learnsystem"
       sx={{
        
         backgroundColor: "background.secondary",
@@ -70,7 +73,7 @@ export default function LearnSystem() {
                     borderRadius:"50%",
                     width:"30px",
                     height:"30px",
-                    ml:"20px",
+                    mr:"15px",
                     display:"flex",
                     justifyContent:"center",
                     alignItems:"center",

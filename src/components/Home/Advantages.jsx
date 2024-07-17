@@ -19,7 +19,7 @@ export default function Advantages() {
       description: "اختبارات تقيس مستوي الطالب و شهادات للطلاب المتفوقين",
       icon: (
         <WorkspacePremiumIcon
-          sx={{ color: "text.primary", fontSize: "45px", ml: "10px" }}
+          sx={{ color: "text.primary", fontSize: "45px", mr: "10px" }}
         />
       ),
     },
@@ -29,7 +29,7 @@ export default function Advantages() {
         "حصص تفاعلية بين الطالب و المعلم باستخدام طرق التعليم الحديثة",
       icon: (
         <SchoolIcon
-          sx={{ color: "text.primary", fontSize: "45px", ml: "10px" }}
+          sx={{ color: "text.primary", fontSize: "45px", mr: "10px" }}
         />
       ),
     },
@@ -39,7 +39,7 @@ export default function Advantages() {
         "دعم مستمر للطالب للتأكد من إتقانه للتلاو و التجويد مع المتاباعة مع ولي الأمر",
       icon: (
         <SupportAgentIcon
-          sx={{ color: "text.primary", fontSize: "45px", ml: "10px" }}
+          sx={{ color: "text.primary", fontSize: "45px", mr: "10px" }}
         />
       ),
     },
@@ -49,14 +49,14 @@ export default function Advantages() {
         "أسعار في متناول اليد لضمان رضاء العميل" ,
       icon: (
         <PriceCheckIcon
-          sx={{ color: "text.primary", fontSize: "45px", ml: "10px" }}
+          sx={{ color: "text.primary", fontSize: "45px", mr: "10px" }}
         />
       ),
     }
   ];
 
   return (
-    <Box sx={{ py: "80px" }}>
+    <Box sx={{ py: "80px" }} id="advantages">
       <Container maxWidth="xl">
         <Stack direction={{xs:"column",md:"row"}} justifyContent="space-between" alignItems={{xs:"normal",md:"center"}}>
           <Typography

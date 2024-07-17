@@ -15,8 +15,9 @@ import Landing from "./components/Home/Landing.jsx";
 import About from "./components/Home/About.jsx";
 import LearnSystem from "./components/Home/LearnSystem.jsx";
 import Advantages from "./components/Home/Advantages.jsx";
+import Courses from "./components/Home/Courses.jsx";
 import Contact from "./components/Home/Contact.jsx";
-
+import Footer from "./components/Home/Footer.jsx";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -32,7 +33,8 @@ function App() {
     AOS.init({
       duration:600,
       easing: "ease-out",
-      once: true,
+      once: false,
+      mirror:true
      
     });
   },[])
@@ -61,7 +63,9 @@ function App() {
   <About/>
   <LearnSystem/> 
   <Advantages/>
+  <Courses/>
   <Contact/>
+  <Footer/>
   </>
     )
   }else{

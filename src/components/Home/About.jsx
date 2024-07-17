@@ -6,10 +6,10 @@ import Stack from "@mui/material/Stack";
 
 function About() {
   return (
-    <Box sx={{ bgcolor: "background.primary",py:"70px" }}>
+    <Box sx={{ bgcolor: "background.primary",py:"70px" }} id="about">
       <Container maxWidth="xl">
         <Stack alignItems="center" gap={{xs:"70px",sm:"70px",md:"0px"}} justifyContent="space-between" flexDirection={{xs:"column",sm:"column",md:"row"}}>
-          <Box sx={{maxWidth:{md:"600px"},textAlign:{xs:"center",sm:"center",md:"right"}}} data-aos="fade-left">
+          <Box sx={{maxWidth:{md:"600px"},textAlign:{xs:"center",sm:"center",md:"right"}}} data-aos="fade-down">
             <Typography
               variant="h2"
               color="text.secondary.blue"
@@ -34,7 +34,7 @@ function About() {
             </Typography>
           </Box>
 
-          <Box sx={{width:{md:"500px"}}}  className="aboutphoto" data-aos="fade-right">
+          <Box sx={{width:{md:"500px"}}}  className="aboutphoto" data-aos="fade-down">
             <img src="../../../imgs/about.jpg"/>
           </Box>
         </Stack>
